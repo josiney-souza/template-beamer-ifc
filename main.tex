@@ -1,4 +1,4 @@
-\documentclass{beamer}
+\documentclass[xcolor=dvipsnames]{beamer}
 \useinnertheme{rectangles}
 \useoutertheme{infolines}
 
@@ -17,6 +17,17 @@
 \beamertemplatenavigationsymbolsempty
 % https://stackoverflow.com/questions/1435837/how-to-remove-footers-of-latex-beamer-templates
 \beamertemplatefootempty
+
+%%% Cores das fontes:
+% https://en.wikibooks.org/wiki/LaTeX/Colors
+\definecolor{ifvermelho}{RGB}{200,12,15}
+\definecolor{ifverde}{HTML}{2F9E41}
+
+% https://tex.stackexchange.com/questions/133820/beamer-how-to-change-color-of-infolines-and-frame-title
+\setbeamercolor{title}{fg=Red}
+\setbeamercolor{frametitle}{fg=Red}
+\setbeamercolor{section in head/foot}{fg=White,bg=ifvermelho}
+\setbeamercolor{subsection in head/foot}{fg=ifverde}
 
 \begin{document}
 \begin{frame}[plain]{}
