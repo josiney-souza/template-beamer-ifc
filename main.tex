@@ -48,10 +48,27 @@
 }
 
 
+
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %%%%%%%%%%%%%%% Início do documento %%%%%%%%%%%%%%%
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \begin{document}
+
+%%%%% Primeira página do modelo abaixo - PODE SER REMOVIDA, SE DESEJAR %%%%%
+%%% Centralizando o titulo da primeira pagina
+% https://stackoverflow.com/questions/2365539/centering-titles-when-using-the-beamer-class-in-latex
+%%% Removendo as formatacoes do slide
+% https://tex.stackexchange.com/questions/281334/left-aligned-title-page-in-beamer-boadilla-usetheme
+{
+\usebackgroundtemplate%
+{%
+    \includegraphics[width=\paperwidth,height=\paperheight]{primeira-pag-menor.jpg}%
+}
+\begin{frame}[plain]{\centerline{\inserttitle}}
+\end{frame}
+}
+%%%%% Primeira página do modelo acima - PODE SER REMOVIDA, SE DESEJAR %%%%%
+
 \begin{frame}[plain]{}
     \maketitle
 \end{frame}
