@@ -14,8 +14,10 @@
 
 %%% Apagar barra de navegacao:
 % https://stackoverflow.com/questions/3210205/how-to-get-rid-of-navigation-bars-in-beamer
-\beamertemplatenavigationsymbolsempty
 % https://stackoverflow.com/questions/1435837/how-to-remove-footers-of-latex-beamer-templates
+\beamertemplatenavigationsymbolsempty
+%%% Remover o titulo, autor e data do rodape:
+% https://tex.stackexchange.com/questions/113443/remove-author-and-institution-in-footline
 \beamertemplatefootempty
 
 %%% Cores das fontes:
@@ -28,6 +30,16 @@
 \setbeamercolor{frametitle}{fg=Red}
 \setbeamercolor{section in head/foot}{fg=White,bg=ifvermelho}
 \setbeamercolor{subsection in head/foot}{fg=ifverde}
+
+%%% Mostrar o sumario novamente antes do inicio da proxima secao
+% https://pt.overleaf.com/learn/latex/beamer
+\AtBeginSection[]
+{\small
+  \begin{frame}[plain]
+    \frametitle{Sumário}
+    \tableofcontents[currentsection]
+  \end{frame}
+}
 
 \begin{document}
 \begin{frame}[plain]{}
